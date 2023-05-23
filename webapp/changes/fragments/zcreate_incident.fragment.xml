@@ -1,0 +1,7 @@
+<!-- Use stable and unique IDs!-->
+<core:FragmentDefinition 	xmlns:semantic="sap.m.semantic" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:core='sap.ui.core' xmlns='sap.m'>
+	<!--  add your xml here -->
+		<!-- <Button id="zidNewIncidetenButton" app:IncidentCategory="{constants>/MODEL/ODATA/INC_CAT_INC}" press="onNewIncidentPress" text="{i18n>newIncident}"/>
+		 -->
+		 	<semantic:PositiveAction id="zzz" app:IncidentCategory="{constants>/MODEL/ODATA/INC_CAT_INC}" press="onNewIncidentPress" text="{i18n>newIncident}"/>
+</core:FragmentDefinition>

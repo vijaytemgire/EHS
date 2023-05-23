@@ -1,0 +1,37 @@
+{
+	"fileName": "id_1683631202630_60_addXML",
+	"fileType": "change",
+	"changeType": "addXML",
+	"moduleName": "customer/EHS/changes/fragments/zcreate_incident.fragment.xml",
+	"reference": "customer.EHS",
+	"packageName": "$TMP",
+	"content": {
+		"targetAggregation": "positiveAction",
+		"index": 0,
+		"fragmentPath": "fragments/zcreate_incident.fragment.xml"
+	},
+	"selector": {
+		"id": "master--page",
+		"idIsLocal": true
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/ehs.inc.reportincidents1/changes/",
+	"projectId": "customer.EHS",
+	"creation": "2023-05-09T11:20:03.024Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "sap.ui.rta.command",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.96.11",
+		"sourceChangeFileName": "",
+		"compositeCommand": "",
+		"command": "addXML"
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

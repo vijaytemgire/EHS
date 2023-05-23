@@ -1,0 +1,34 @@
+{
+	"fileName": "id_1683634875083_89_codeExt",
+	"fileType": "change",
+	"changeType": "codeExt",
+	"moduleName": "customer/EHS/changes/coding/zdetail",
+	"reference": "customer.EHS",
+	"packageName": "$TMP",
+	"content": {
+		"codeRef": "coding/zdetail.js"
+	},
+	"selector": {
+		"controllerName": "ehs.inc.reportincidents1.controller.CreateIncident"
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/ehs.inc.reportincidents1/changes/",
+	"projectId": "customer.EHS",
+	"creation": "2023-05-09T12:21:15.085Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.96.11",
+		"sourceChangeFileName": "",
+		"compositeCommand": "",
+		"command": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}

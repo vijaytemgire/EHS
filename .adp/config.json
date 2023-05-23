@@ -1,0 +1,11 @@
+{
+  "componentname": "ehs.inc.reportincidents1",
+  "safeMode": false,
+  "appvariant": "EHS",
+  "layer": "CUSTOMER_BASE",
+  "sourceSystem": "FD2",
+  "isOVPApp": false,
+  "isFioriElement": false,
+  "environment": "ABAP",
+  "ui5Version": "1.96.12"
+}

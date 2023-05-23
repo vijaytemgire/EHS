@@ -1,0 +1,38 @@
+{
+	"fileName": "id_1684751948689_110_addXMLAtExtensionPoint",
+	"fileType": "change",
+	"changeType": "addXMLAtExtensionPoint",
+	"moduleName": "customer/EHS/changes/fragments/ztitle.fragment.xml",
+	"reference": "customer.EHS",
+	"packageName": "$TMP",
+	"content": {
+		"fragmentPath": "fragments/ztitle.fragment.xml"
+	},
+	"selector": {
+		"name": "CustomerExtensionForCreateIncident",
+		"viewSelector": {
+			"id": "createIncident",
+			"idIsLocal": true
+		}
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/customer.EHS/changes/",
+	"projectId": "customer.EHS",
+	"creation": "2023-05-22T10:39:08.723Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "sap.ui.rta.command",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.96.11",
+		"sourceChangeFileName": "",
+		"compositeCommand": "id_1684751948690_111_composite",
+		"command": "addXMLAtExtensionPoint"
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}
