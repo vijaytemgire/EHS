@@ -10,11 +10,14 @@
 
 sap.ui.define([
 		'sap/ui/core/mvc/ControllerExtension'
-		,'sap/ui/core/mvc/OverrideExecution'
+		,'sap/ui/core/mvc/OverrideExecution',
+		"sap/m/Label",
+		"sap/ui/model/Filter",
+		"sap/m/ColumnListItem"
 	],
 	function (
 		ControllerExtension
-		,OverrideExecution
+		,OverrideExecution,L,F,d
 	) {
 		"use strict";
 		return ControllerExtension.extend("customer.EHS.zdetail", {
@@ -36,11 +39,72 @@ sap.ui.define([
 						overrideExecution: OverrideExecution.After
 					},
 					couldBePrivate: {
-						public: false
+						public: true
 					}
 				}
 			},
 
+			_zonSuggestionItemSelected: function (e) {
+				debugger;
+				var s = e.getParameter("selectedRow");
+				var m = this.oView.getBindingContext().getModel();
+				var S = s.getBindingContextPath();
+				var n = m.getProperty(S).EHSLocationUUID;
+				var p = this.oView.getBindingContext().getPath();
+				m.setProperty(p + "/EHSLocationUUID", n);
+			},
+			zhandleLocationSuggest: function (e ,sControlId) {
+				debugger;
+				var v = e.getParameter("suggestValue");
+				
+				 var g = [new F("EHSLocationStatus", sap.ui.model.FilterOperator.NE, "04")];
+				if (v) {
+					var o = {
+						search: v
+					};
+					var l = this.getView().byId("customer.EHS.znoncompany");
+					l.bindAggregation("suggestionRows", {
+						path: "/C_EHSLocationValueHelp",
+						template: new d({
+							cells: [new L({
+								text: "{EHSLocationName}"
+							}), new L({
+								text: "{EHSLocationID}"
+							}), new L({
+								text: "{EHSLocationType_Text}"
+							})]
+						}),
+						 filters: g,
+						parameters: {
+							custom: o,
+							select: "EHSLocationUUID,EHSLocationName,EHSLocationID,EHSLocationType_Text"
+						},
+						templateShareable: true
+					});
+				}
+			},
+			onValueHelpRequest: function (oEvent) {
+				debugger;
+				var sInputValue = oEvent.getSource().getValue(),
+					oView = this.getView();
+	
+				// if (!this._pValueHelpDialog) {
+				// 	this._pValueHelpDialog = Fragment.load({
+				// 		id: oView.getId(),
+				// 		name: "sap.m.sample.InputKeyValue.ValueHelpDialog",
+				// 		controller: this
+				// 	}).then(function (oDialog) {
+				// 		oView.addDependent(oDialog);
+				// 		return oDialog;
+				// 	});
+				// }
+				// this._pValueHelpDialog.then(function (oDialog) {
+				// 	// Create a filter for the binding
+				// 	oDialog.getBinding("items").filter([new Filter("Name", FilterOperator.Contains, sInputValue)]);
+				// 	// Open ValueHelpDialog filtered by the input's value
+				// 	oDialog.open(sInputValue);
+				// });
+			},
 			// adding a private method, only accessible from this controller extension
 			_privateMethod: function() {},
 			// adding a public method, might be called from or overridden by other controller extensions as well
