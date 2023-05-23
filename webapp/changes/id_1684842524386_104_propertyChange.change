@@ -1,0 +1,37 @@
+{
+	"fileName": "id_1684842524386_104_propertyChange",
+	"fileType": "change",
+	"changeType": "propertyChange",
+	"moduleName": "",
+	"reference": "customer.EHS",
+	"packageName": "$TMP",
+	"content": {
+		"property": "showSuggestion",
+		"newValue": true
+	},
+	"selector": {
+		"id": "createIncident--customer.EHS.znon-company",
+		"type": "sap.m.Input",
+		"idIsLocal": true
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/ehs.inc.reportincidents1/changes/",
+	"projectId": "customer.EHS",
+	"creation": "2023-05-23T11:48:44.484Z",
+	"originalLanguage": "EN",
+	"support": {
+		"generator": "sap.ui.rta.command",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.96.11",
+		"sourceChangeFileName": "",
+		"compositeCommand": "",
+		"command": "property"
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"jsOnly": false,
+	"variantReference": "",
+	"appDescriptorChange": false
+}
