@@ -3,6 +3,7 @@
 	<!--  add your xml here -->
 	<Label text="Title" labelFor="wrappingInput" id="ztitletext" />
 	<Input id="zincTitle" placeholder="Please enter Title here " value="{IncidentTitle}"/>
-								
+	<Label text="Non-Company location" labelFor="wrappingInput" id="znoncompanylocationText" />
+	<Input id="znon-company" placeholder="Please enter Non-Company location  " value="{IncidentTitle}"/>					
 						
 </core:FragmentDefinition>
