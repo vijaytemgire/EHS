@@ -1,0 +1,26 @@
+{
+  "fileName": "id_1684914697252",
+  "namespace": "apps/ehs.inc.reportincidents1/appVariants/customer.EHS/changes",
+  "layer": "CUSTOMER_BASE",
+  "fileType": "change",
+  "creation": "2023-05-24T07:51:37.252Z",
+  "packageName": "$TMP",
+  "reference": "customer.EHS",
+  "support": {
+    "generator": "add-annotation-files-generator"
+  },
+  "changeType": "appdescr_app_addAnnotationsToOData",
+  "content": {
+    "dataSourceId": "mainService",
+    "annotations": [
+      "customer.annotation.annotation_1684914697252"
+    ],
+    "annotationsInsertPosition": "END",
+    "dataSource": {
+      "customer.annotation.annotation_1684914697252": {
+        "uri": "../annotations/annotation_1684914697252.xml",
+        "type": "ODataAnnotation"
+      }
+    }
+  }
+}
