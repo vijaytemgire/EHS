@@ -17,7 +17,7 @@
 				</Annotation>
 			</Annotations>
 			<Annotations Target="SAP.Incident/ZZIncidentNCompLocation">
-				<Annotation Term="Common.Label" String="Non company Location"/>
+				<Annotation Term="Common.Label" String="Non company Location "/>
 			</Annotations>
 		</Schema>
 	</edmx:DataServices>
