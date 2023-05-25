@@ -3,8 +3,11 @@
 <core:FragmentDefinition
     xmlns:core='sap.ui.core'
     xmlns='sap.m'
+    xmlns:smartField="sap.ui.comp.smartfield" 
+    xmlns:form="sap.ui.comp.smartform" 
 >
     <!--  add your xml here -->
+   
     <Label
         text="Title"
         labelFor="wrappingInput"
@@ -68,4 +71,7 @@
             </Column>
         </suggestionColumns>
     </Input>
+
+					<smartField:SmartField id="idProductId" value="{ZZIncRepPersonId}"/>
+
 </core:FragmentDefinition>
