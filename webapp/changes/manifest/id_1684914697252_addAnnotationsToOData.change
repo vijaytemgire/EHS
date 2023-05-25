@@ -18,8 +18,9 @@
     "annotationsInsertPosition": "END",
     "dataSource": {
       "customer.annotation.annotation_1684914697252": {
-        "uri": "../annotations/annotation_1684914697252.xml",
+        "uri": "changes/annotations/annotation_1684914697252.xml",
         "type": "ODataAnnotation"
+        
       }
     }
   }
