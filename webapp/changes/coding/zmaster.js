@@ -9,12 +9,12 @@
  */
 
 sap.ui.define([
-		'sap/ui/core/mvc/ControllerExtension'
-		 ,'sap/ui/core/mvc/OverrideExecution'
-	],
+	'sap/ui/core/mvc/ControllerExtension'
+	, 'sap/ui/core/mvc/OverrideExecution'
+],
 	function (
 		ControllerExtension
-		 ,OverrideExecution
+		, OverrideExecution
 	) {
 		"use strict";
 		return ControllerExtension.extend("customer.EHS.zmaster", {
@@ -23,16 +23,16 @@ sap.ui.define([
 				// in general methods that start with "_" are private
 				methods: {
 					publicMethod: {
-						public: true /*default*/ ,
-						final: false /*default*/ ,
+						public: true /*default*/,
+						final: false /*default*/,
 						overrideExecution: OverrideExecution.Instead /*default*/
 					},
 					finalPublicMethod: {
 						final: true
 					},
 					onMyHook: {
-						public: true /*default*/ ,
-						final: false /*default*/ ,
+						public: true /*default*/,
+						final: false /*default*/,
 						overrideExecution: OverrideExecution.After
 					},
 					couldBePrivate: {
@@ -75,10 +75,9 @@ sap.ui.define([
 				 * This hook is the same one that SAPUI5 controls get after being rendered.
 				 * @memberOf customer.EHS.zmaster
 				 */
-				onAfterRendering: function() {
-	
-				 this.getView().byId("addButton").setVisible(false);
-				
+				onAfterRendering: function () {
+					this.getView().byId("addButton").setVisible(false);
+
 				},
 
 				/**

@@ -1,8 +1,77 @@
+
 <!-- Use stable and unique IDs!-->
-<core:FragmentDefinition xmlns:core='sap.ui.core' xmlns='sap.m'>
-	<!--  add your xml here -->
-	<Label text="Title" labelFor="wrappingInput" id="ztitletext" />
-	<Input id="zincTitle" placeholder="Please enter Title here " value="{IncidentTitle}"/>
-								
-						
+<core:FragmentDefinition
+    xmlns:core='sap.ui.core'
+    xmlns='sap.m'
+    xmlns:smartField="sap.ui.comp.smartfield" 
+    xmlns:form="sap.ui.comp.smartform" 
+>
+    <!--  add your xml here -->
+   
+    <Label
+        text="Title"
+        labelFor="wrappingInput"
+        id="ztitletext"
+    />
+    <Input
+        id="zincTitle"
+        placeholder="Please enter Title here "
+        value="{IncidentTitle}"
+    />
+    <Label
+        text="Non-Company location"
+        labelFor="wrappingInput"
+        id="znoncompanylocationText"
+    />
+    <Input
+        id="znoncompany"
+        placeholder="Please enter Non-Company location  "
+        value="{ZZIncidentNCompLocation}"
+        valueHelpRequest=".extension.customer.EHS.zdetail.zonValueHelpRequest"
+        showSuggestion="true"
+        startSuggestion="2"
+        suggestionItemSelected=".extension.customer.EHS.zdetail._zonSuggestionItemSelected"
+        suggest=".extension.customer.EHS.zdetail.zhandleLocationSuggest"
+        showValueHelp="true"
+        
+    >
+        <suggestionColumns>
+            <Column
+                id="zidColumnIncidentLocationName"
+                hAlign="Begin"
+                popinDisplay="Inline"
+                demandPopin="true"
+            >
+                <Label
+                    id="zidLabelIncidentLocationName"
+                    text="{/#C_EHSLocationValueHelpType/EHSLocationName/@sap:label}"
+                />
+            </Column>
+            <Column
+                id="zidColumnIncidentLocationId"
+                hAlign="Center"
+                popinDisplay="Inline"
+                demandPopin="true"
+            >
+                <Label
+                    id="zidLabelIncidentLocationId"
+                    text="{/#C_EHSLocationValueHelpType/EHSLocationID/@sap:label}"
+                />
+            </Column>
+            <Column
+                id="zidColumnIncidentLocationType"
+                hAlign="Begin"
+                popinDisplay="Inline"
+                demandPopin="true"
+            >
+                <Label
+                    id="zidLabelIncidentLocationType"
+                    text="{/#C_EHSLocationValueHelpType/EHSLocationType/@sap:label}"
+                />
+            </Column>
+        </suggestionColumns>
+    </Input>
+
+					<smartField:SmartField id="idProductId" value="{ZZIncRepPersonId}"/>
+
 </core:FragmentDefinition>
